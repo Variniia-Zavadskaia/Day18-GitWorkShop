@@ -20,10 +20,14 @@ var gBallSize = 100;
 //     }
 // }
 
-function onBallClick() {
-    var elBall = document.querySelector('.ball');
-    var size = getRandomInt(20, 60) + 'px';
-    elBall.style.height = size;
-    elBall.style.width  = size;
-}
+// function onBallClick() {
+//     var elBall = document.querySelector('.ball');
+//     var size = getRandomInt(20, 60) + 'px';
+//     elBall.style.height = size;
+//     elBall.style.width  = size;
+// }
 
+function onBallClick(){
+    var elBall = document.querySelector('.ball');
+    elBall.style.backgroundColor = getRandomColor();
+}
