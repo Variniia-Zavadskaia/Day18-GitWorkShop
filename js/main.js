@@ -4,7 +4,7 @@
 //     console.log('Green ball');
 // }
 var gBallSize = 100;
-
+// var maxDiameter = 400
 // function onBallClick() {
 //     var elBall = document.querySelector('.ball');
 //     if (gBallSize < 400) {
@@ -27,7 +27,23 @@ var gBallSize = 100;
 //     elBall.style.width  = size;
 // }
 
-function onBallClick(){
-    var elBall = document.querySelector('.ball');
-    elBall.style.backgroundColor = getRandomColor();
+// function onBallClick(){
+//     var elBall = document.querySelector('.ball');
+//     elBall.style.backgroundColor = getRandomColor();
+// }
+
+function onBallClick(elBall, maxDiameter) {
+    // var elBall = document.querySelector('.ball');
+    console.log(elBall);
+    if (gBallSize < maxDiameter) {
+        gBallSize += 50
+        elBall.style.height = gBallSize + 'px';
+        elBall.style.width = gBallSize + 'px';
+    } else {
+        gBallSize = 100;
+        elBall.style.height = gBallSize + 'px';
+        elBall.style.width = gBallSize + 'px';
+        // document.querySelector('.ball').style.transition = 1 + 's'
+
+    }
 }
