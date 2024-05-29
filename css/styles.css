@@ -1,12 +1,21 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     text-align: center;
     background-color: black;
 }
 
-h1{
+h1 {
     color: white;
+}
+
+div {
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+
 }
