@@ -16,11 +16,22 @@ div {
     justify-items: center;
     align-items: center;
     margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.ball{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: green;
-    font-size: 22px;
-    font-weight: bold;
-    transition: 1s;
+}
+
+.pop{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: red;
+    margin-top: 10px;
 }
