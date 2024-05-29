@@ -12,10 +12,14 @@ h1 {
 }
 
 div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
     margin: auto;
     height: 100px;
     width: 100px;
     border-radius: 50%;
     background-color: green;
-
+    font-size: 22px;
+    font-weight: bold;
 }
