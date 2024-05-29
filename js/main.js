@@ -3,12 +3,20 @@
 // function onBallClick(){
 //     console.log('Green ball');
 // }
-
+var gBallSize = 100;
 function onBallClick() {
     var elBall = document.querySelector('.ball');
-    elBall.style.height = 50 + 'px';
-    elBall.style.width = 50 + 'px';
-    elBall.innerHTML;
+    if (gBallSize < 400) {
+        gBallSize += 50
+        elBall.style.height = gBallSize + 'px';
+        elBall.style.width = gBallSize + 'px';
+    } else {
+        gBallSize = 100;
+        elBall.style.height = gBallSize + 'px';
+        elBall.style.width = gBallSize + 'px';
+        // document.querySelector('.ball').style.transition = 1 + 's'
+
+    }
 }
 
 
